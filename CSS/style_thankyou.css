@@ -1,0 +1,44 @@
+body {
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    background-color: #f8f8f8;
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+    border: 3px solid #15ac01;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 40px;
+    color: #15ac01;
+  }
+  
+  p {
+    font-size: 22px;
+    color: #000000;
+    margin-top: 10px;
+  }
+  .btn{
+    cursor: pointer;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #080808;
+    color: #ffffff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background:  #ff004f;
+    color: #000000;
+}

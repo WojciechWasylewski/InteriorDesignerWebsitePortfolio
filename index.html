@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S02KNZ2LJS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S02KNZ2LJS');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominika Toczyska Website Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/3475f172b9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">O Mnie</a></li>
+                    <li><a href="#services">Umiejętności</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li></li>
+                    <li><a href="index.html">PL</a></li>
+                    <li><a href="HTML/index_eng.html">ENG</a></li>
+                    
+                   
+
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Cześć, jestem </p>
+                <h1>Dominika</h1>
+                <h2>I jestem, <span class="typing"></span></h2>
+                <p>z Warszawy</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about-section------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">O Mnie</h1>
+                    <p>Nazywam się Dominika i jestem absolwentką Wyższej Szkoły Ekologii i Zarządzania. Uzyskałam tytuł inżyniera na kierunku architektury wnętrz. 
+                        Planuję kontynuować naukę na poziomie magisterskim w tej dziedzinie. Od dziecka interesuję się projektowaniem wnętrz, a rodzice wspierali mnie w rozwijaniu tej pasji. 
+                        Mam doświadczenie w obsłudze klienta oraz pasję do rysowania i sportu siłowego. Moje cechy to kreatywność i pracowitość, które chcę wykorzystać w dalszej karierze.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Umiejętności</p>
+                        <p class="tab-links" onclick="opentab('experience')">Doświadczenie</p>
+                        <p class="tab-links" onclick="opentab('education')">Edukacja</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>3ds Max</span><br>Wizualizacja wnętrz</li>
+                            <li><span>AutoCad</span><br>Projekty <br>Rzuty funkcjonalne</li>
+                            <li><span>MsOffice</span><br>Przygotowywanie kosztorysów <br>Moodboards</li>
+                            <li><span>Photoshop</span><br>Fotografia i edycja zdjęć</li>
+                            <li><span>Prawo jazdy</span><br>B</li>
+                            <li><span>Obsługa Klienta</span><br>Doradztwo i Sprzedaż</li>
+                            <li><span>Języki</span><br>Polski-ojczysty <br> Angielski-B2</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Tearaz</span><br>DH Vitkac - Magazynier</li>
+                            <li><span>2022 - 2023</span><br>Nike-Złote Tarasy - VM i sprzedawca</li>
+                            <li><span>2019 - 2022</span><br>Uniqalna Cafe - barista</li>
+                            <li><span>2018 - 2019</span><br>Art' Impression - barista/kelnerka</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Teraz</span><br>Studia Magisterskie Architekt Wnętrz<br>WSEiZ University</li>
+                            <li><span>2023</span><br>Dyplom inżyniera architektury wnętrz<br>WSEiZ University </li>
+                            <li><span>2018</span><br>Matura</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------services-section------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Umiejętności</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-user-graduate fa-bounce"></i>
+                    <h2>Architekt Wnętrz</h2>
+                    <p>Ukończenie Wyższej Szkoły Ekologii i Zarządzania z tytułem inżyniera.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-pencil fa-bounce"></i>
+                    <h2>Znajomość programów do wizualizacji i rysunków technicznych</h2>
+                    <p>Znajomość programu do tworzenia rysunków technicznych, takich jak AutoCAD. Umiejętność czytania i tworzenia planów, przekrojów, elewacji i innych rysunków technicznych. <br>
+                        Znajomość narzędzi do modelowania 3D, takich jak SketchUp.
+                        </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-tie fa-bounce"></i>
+                    <h2>Obsługa klienta</h2>
+                    <p>Wieloletnie doświadczenie w obsłudze klienta na różnych stanowiskach.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------portfolio-section------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Projekt Mieszkania</h3>
+                        <p>Zaprojektowałam wnętrze mojego rodzinnego mieszkania <br> Zobacz projekt w linku poniżej</p>
+                        <a href="HTML/my_home.html"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Projekt apartamentu z wizualizacją łazienki</h3>
+                        <p><br> Zobacz projekt w linku poniżej</p>
+                        <a href="HTML/flat_project.html"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Praca inżynierska</h3>
+                        <p><br> Zobacz projekt w linku poniżej</p>
+                        <a href="HTML/engineer_thesis.html"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-4.png">
+                    <div class="layer">
+                        <h3>Projekt Domu Kultury Żoliborz</h3>
+                        <p>
+                            <br>Zobacz projekt w linku poniżej</p>
+                        <a href="HTML/house_of_culture.html"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.png">
+                    <div class="layer">
+                        <h3>Projekt Kawiarni</h3>
+                        <p>
+                            <br> Zobacz projekt w linku poniżej</p>
+                        <a href="HTML/cafe_project.html"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-6.png">
+                    <div class="layer">
+                        <h3>Projekt Wystawy</h3>
+                        <p>
+                            <br> Zobacz projekt w linku poniżej</p>
+                        <a href="HTML/exhibition.html"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-7.png">
+                    <div class="layer">
+                        <h3>Projekt kuchni</h3>
+                        <p>
+                            <br>Zobacz projekt w linku poniżej</p>
+                        <a href="HTML/kitchen_project.html"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-8.png">
+                    <div class="layer">
+                        <h3>Projekt Ganka</h3>
+                        <p>
+                            <br> Zobacz projekt w linku poniżej</p>
+                        <a href="HTML/porch_project.html"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-9.png">
+                    <div class="layer">
+                        <h3>Wkrótce!!!</h3>
+                        <p>
+                            <br> </p>
+                        <a href="#"><i class="fa-solid fa-paperclip fa-fade"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------contact-section------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Kontakt</h1>
+                    <p><i class="fa-solid fa-user"></i>Dominika Toczyska</p>
+                    <p><i class="fa-solid fa-phone fa-shake"></i></i>+48</p>
+                    <p><i class="fa-solid fa-envelope fa-flip"></i>kontakt@dominikatoczyska.pl</p>
+                    <p><i class="fa-solid fa-location-dot"></i></i>Warszawa</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/dominika.toczyska.1" target = "_blank" id = "fb"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/dominika-toczyska-227490288/" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" id="insta"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="files/CV_Dominika_Toczyska.pdf" download class="btn btn2">Pobierz CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/kontakt@dominikatoczyska.pl" method="POST">
+                        <input type="text" name="Name" placeholder="Imię" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <input type="hidden" name="_next" value="https://dominikatoczyska.pl/HTML/thankyou.html">
+                        <textarea name="Message"  rows="6" placeholder="Twoja Wiadomość"></textarea>
+                        <button type="submit" class="btn btn2">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2023 Wojciech Wasylewski</p>
+        </div>
+    </div>
+    
+    <script src="JS/script_pl.js"></script>
+
+</body>
+</html>
